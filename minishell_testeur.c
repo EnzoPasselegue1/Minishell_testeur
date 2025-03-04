@@ -8,6 +8,8 @@
 #define BUFFER_SIZE 1024
 #define TMP_OUTPUT_MINISHELL "output_minishell.txt"
 #define TMP_OUTPUT_BASH "output_bash.txt"
+#define CLEAN_OUTPUT_MINISHELL "clean_minishell.txt"
+#define CLEAN_OUTPUT_BASH "clean_bash.txt"
 
 void execute_shell_command(const char *command, const char *shell, const char *output_file) {
     int fd[2];
@@ -15,7 +17,6 @@ void execute_shell_command(const char *command, const char *shell, const char *o
     pid_t pid = fork();
 
     if (pid == 0) {
-        // Rediriger la sortie vers un fichier
         int out_fd = open(output_file, O_WRONLY | O_CREAT | O_TRUNC, 0644);
         dup2(fd[0], STDIN_FILENO);
         dup2(out_fd, STDOUT_FILENO);
@@ -36,9 +37,33 @@ void execute_shell_command(const char *command, const char *shell, const char *o
     }
 }
 
+// 🔹 Fonction pour supprimer le prompt avant comparaison
+void clean_output(const char *input_file, const char *clean_file) {
+    FILE *in = fopen(input_file, "r");
+    FILE *out = fopen(clean_file, "w");
+
+    if (!in || !out) {
+        perror("Erreur ouverture fichier de nettoyage");
+        return;
+    }
+
+    char line[BUFFER_SIZE];
+
+    while (fgets(line, BUFFER_SIZE, in)) {
+        // Supprimer les lignes contenant "minishell$>"
+        if (strstr(line, "minishell$>") == NULL) {
+            fputs(line, out);
+        }
+    }
+
+    fclose(in);
+    fclose(out);
+}
+
+// 🔹 Comparaison des fichiers nettoyés
 int compare_outputs() {
-    FILE *file1 = fopen(TMP_OUTPUT_MINISHELL, "r");
-    FILE *file2 = fopen(TMP_OUTPUT_BASH, "r");
+    FILE *file1 = fopen(CLEAN_OUTPUT_MINISHELL, "r");
+    FILE *file2 = fopen(CLEAN_OUTPUT_BASH, "r");
     
     if (!file1 || !file2) {
         perror("Erreur ouverture fichier de sortie");
@@ -65,9 +90,10 @@ int compare_outputs() {
     return match;
 }
 
+// 🔹 Afficher les différences en cas d’échec
 void show_difference() {
-    FILE *file1 = fopen(TMP_OUTPUT_MINISHELL, "r");
-    FILE *file2 = fopen(TMP_OUTPUT_BASH, "r");
+    FILE *file1 = fopen(CLEAN_OUTPUT_MINISHELL, "r");
+    FILE *file2 = fopen(CLEAN_OUTPUT_BASH, "r");
 
     if (!file1 || !file2) {
         perror("Erreur ouverture fichier de sortie");
@@ -125,7 +151,11 @@ int main(int argc, char *argv[]) {
         execute_shell_command(command, minishell_path, TMP_OUTPUT_MINISHELL);
         execute_shell_command(command, "/bin/bash", TMP_OUTPUT_BASH);
 
-        // Compare les sorties
+        // Nettoie les sorties pour enlever le prompt
+        clean_output(TMP_OUTPUT_MINISHELL, CLEAN_OUTPUT_MINISHELL);
+        clean_output(TMP_OUTPUT_BASH, CLEAN_OUTPUT_BASH);
+
+        // Compare les fichiers nettoyés
         if (compare_outputs()) {
             printf("✅ Test %d PASS\n", test_number);
         } else {
@@ -141,6 +171,8 @@ int main(int argc, char *argv[]) {
     // Nettoyage
     remove(TMP_OUTPUT_MINISHELL);
     remove(TMP_OUTPUT_BASH);
+    remove(CLEAN_OUTPUT_MINISHELL);
+    remove(CLEAN_OUTPUT_BASH);
 
     return EXIT_SUCCESS;
 }

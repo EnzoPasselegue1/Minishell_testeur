@@ -59,10 +59,10 @@ cat test_results.log
 🔧 Exemple de sortie :
 
 ```bash
->>>>>>> refs/remotes/origin/main
 $ ./test_minishell ./minishell 3
 
 🛠️ Exécution des tests depuis : echo.txt
+
 ✅ Test 1 PASS  
 ✅ Test 2 PASS  
 ❌ Test 3 FAIL  
@@ -100,4 +100,3 @@ Ce projet est sous licence MIT – Utilisation libre et open-source ! 🚀
 
 
 
->>>>>>> refs/remotes/origin/main

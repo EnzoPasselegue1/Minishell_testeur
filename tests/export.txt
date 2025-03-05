@@ -1,0 +1,135 @@
+export HOLA=bonjour
+export       HOLA=bonjour
+export
+export Hola
+export Hola9hey
+export $DONTEXIST
+export | grep "HOME"
+export ""
+export =
+export %
+export $?
+export ?=2
+export 9HOLA=
+export HOLA9=bonjour
+export _HOLA=bonjour
+export ___HOLA=bonjour
+export _HO_LA_=bonjour
+export HOL@=bonjour
+export HOL\~A=bonjour
+export -HOLA=bonjour
+export --HOLA=bonjour
+export HOLA-=bonjour
+export HO-LA=bonjour
+export HOL.A=bonjour
+export HOL\\\$A=bonjour
+export HO\\\\LA=bonjour
+export HOL}A=bonjour
+export HOL{A=bonjour
+export HO*LA=bonjour
+export HO#LA=bonjour
+export HO@LA=bonjour
+export HO!LA=bonjour
+export HO$?LA=bonjour
+export +HOLA=bonjour
+export HOL+A=bonjour
+export HOLA+=bonjour
+export HOLA=bonjour
+export HOLA+=bonjour
+export HOLA =bonjour
+export HOLA = bonjour
+export HOLA=bon jour
+export HOLA= bonjour
+export HOLA=bonsoir
+export HOLA=bonretour
+export HOLA=bonjour
+export HOLA=$HOME
+export HOLA=bonjour$HOME
+export HOLA=$HOMEbonjour
+export HOLA=bon$jour
+export HOLA=bon\jour
+export HOLA=bon\\jour
+export HOLA=bon(jour
+export HOLA=bon()jour
+export HOLA=bon&jour
+export HOLA=bon@jour
+export HOLA=bon;jour
+export HOLA=bon!jour
+export HOLA=bon""jour""
+export HOLA$USER=bonjour
+export HOLA=bonjour=casse-toi
+export ""HOLA=bonjour""=casse-toi
+export HOLA=bonjour
+export BYE=casse-toi
+export HOLA=bonjour BYE=casse-toi
+export $HOLA=bonjour
+export HOLA=""bonjour      ""
+export HOLA=""   -n bonjour   ""
+export HOLA=""bonjour   ""/
+export HOLA='""'
+export HOLA=at
+export """" HOLA=bonjour
+export HOLA=""cat Makefile | grep NAME""
+export HOLA=hey
+export HOLA=""  bonjour  hey  ""
+export HOLA=""  bonjour  hey  ""
+export HOLA=""  bonjour  hey  ""
+export HOLA=""  bonjour  hey  ""
+export HOLA=""  bonjour  hey  ""
+export HOLA=""  bonjour  hey  ""
+export HOLA=bonjour
+export HOLA="" hola et $HOLA""
+export HOLA=bonjour
+export HOLA=' hola et $HOLA'
+export HOLA=bonjour
+export HOLA="" hola et $HOLA""$HOLA
+export HOLA=""ls        -l    - a""
+export HOLA=""s -la""
+export HOLA=""s -la""
+export HOLA=""s -la""
+export HOLA=""l""
+export HOLA=""l""
+export HOL=A=bonjour
+export HOLA=""l""
+export HOL=A=""""
+export TE+S=T
+export ""=""
+export ''=''
+export "="="="
+export '='='='
+export HOLA=p
+export BYE=w
+export HOLA=p
+export BYE=w
+export HOLA=p
+export BYE=w
+export HOLA=p
+export BYE=w
+export HOLA=p
+export BYE=w
+export HOLA=-n
+export A=1 B=2 C=3 D=4 E=5 F=6 G=7 H=8
+export HOLA=bonjour
+export HOLA=bonjour
+export hola | unset hola | echo $?
+export HOME=
+export HOME
+export CDPATH=/
+export CDPATH=/
+export CDPATH=./
+export CDPATH=./
+export HOLA=bonjour | cat -e | cat -e
+export HOLA | echo hola
+export | echo hola
+export "" || ls
+export "" && ls
+export "" && unset ""
+export HOLA=hey
+export HOLA=""bonjour hello""
+export HOLA=""bonjour hello""
+export HOLA=""bonjour hello""
+export HOLA=""bonjour hello""
+export HOLA=""bonjour hello""
+export HOLA=""bonjour hello""
+export A=hey
+export A B=Hola D E C=""Que Tal""

@@ -1,0 +1,1 @@
+echo "⭐Noublie pas de mettre une Etoile au projet si il te plait ⭐"

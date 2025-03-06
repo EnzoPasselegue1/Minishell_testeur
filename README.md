@@ -16,7 +16,8 @@ Un testeur automatique pour **minishell**, qui compare les résultats de ton min
 ## 📥 Installation  
 
 Clone le repository et compile le programme :  
-
+Clone le repo dans ton projet ! 
+Le testeur ce lance dans le repo !
 ```bash
 git clone https://github.com/EnzoPasselegue1/Minishell_testeur.git
 cd Minishell_testeur
@@ -32,7 +33,7 @@ Utilise la commande suivante pour exécuter un test :
 ```
 📌 Exemple :
 ```bash
-./test_minishell ./minishell 3
+./test_minishell ./../minishell 3
 ```
 👉 Cela exécutera les tests du fichier echo.txt.
 
@@ -60,7 +61,7 @@ cat test_results.log
 🔧 Exemple de sortie :
 
 ```bash
-$ ./test_minishell ./minishell 3
+$ ./test_minishell ./../minishell 3
 
 🛠️ Exécution des tests depuis : echo.txt
 

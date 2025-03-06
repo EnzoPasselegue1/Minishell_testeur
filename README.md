@@ -18,8 +18,8 @@ Un testeur automatique pour **minishell**, qui compare les résultats de ton min
 Clone le repository et compile le programme :  
 
 ```bash
-git clone https://github.com//testeur-minishell.git
-cd testeur-minishell
+git clone https://github.com/EnzoPasselegue1/Minishell_testeur.git
+cd Minishell_testeur
 gcc test_minishell.c -o test_minishell
 ```
 ## 🎯 Utilisation

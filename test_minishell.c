@@ -14,13 +14,13 @@
 
 // 🔹 Liste des fichiers de test disponibles
 const char *test_files[] = {
-    "test/all.txt",
-    "test/cat.txt",
-    "test/echo.txt",
-    "test/env.txt",
-    "test/export.txt",
-    "test/invalid.txt",
-    "test/mytests.txt"
+    "tests/all.txt",
+    "tests/cat.txt",
+    "tests/echo.txt",
+    "tests/env.txt",
+    "tests/export.txt",
+    "tests/invalid.txt",
+    "tests/mytests.txt"
 };
 const int num_tests = sizeof(test_files) / sizeof(test_files[0]);
 

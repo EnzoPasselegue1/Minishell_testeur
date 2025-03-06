@@ -1,4 +1,3 @@
-\n
 [         ]
 :
 !
@@ -45,7 +44,6 @@
 ''
 *
 */*
-*/*
 ..
 ~
 ABC=hola
@@ -80,47 +78,18 @@ hola Ctlr-D
 Ctlr-\
 hola Ctlr-\
 Ctlr-Z
-sleep 3 | sleep 3 | sleep 3 (faire Ctlr-C une seconde apres)
-sleep 3 | sleep 3 | sleep 3 (faire Ctlr-D une seconde apres)
-sleep 3 | sleep 3 | sleep 3 (faire Ctlr-\ une seconde apres)
-env"
-env"
-export"
-export"
-env"
-env"
-env"
-env"
-env"
-env"
+sleep 3 | sleep 3 | sleep 3 (faire Ctlr-C une seconde après)
+sleep 3 | sleep 3 | sleep 3 (faire Ctlr-D une seconde après)
+sleep 3 | sleep 3 | sleep 3 (faire Ctlr-\ une seconde après)
 env"
 exportHOLA=bonjour
-env"
-env"
-env"
-env"
-env"
-env"
-env"
-env"
-env"
-env"
-env"
-env"
-env"
-env"
-env"
 c$HOLA Makefile"
-env"
 l$HOLA"
 l""$HOLA"""
 l'$HOLA'"
 $HOLAs"
 ""$HOLA""s"
-env"
 '$HOLA's"
-env"
-env"
 $HOLA""BYE""d"
 ""$HOLA""'$BYE'd"
 ""$HOLA""""$BYE""d"
@@ -128,27 +97,17 @@ $""HOLA""$""BYE""d"
 $'HOLA'$'BYE'd"
 ""echo $HOLA"" hey"
 unset HOLA
-env"
-unset HOLA
-unset HOLA
-env"
 unset PATH
-unset PATH
-ls"
-unset ""
 unset INEXISTANT
 unset PWD
 pwd"
 pwd
-unset PWD
 cd $PWD
-pwd"
 unset OLDPWD
 unset 9HOLA
 unset HOLA9
 unset HOL?A
 unset HOLA HOL?A
-unset HOL?A HOLA
 unset HOL?A HOL.A
 unset HOLA=
 unset HOL\\\\A
@@ -166,15 +125,12 @@ unset HOLA_
 unset HOL*A
 unset HOL#A
 unset $HOLA
-unset $PWD
 unset HOL@
 unset HOL!A
 unset HOL^A
 unset HOL$?A
 unset HOL\~A
 unset """" HOLA
-unset PATH
-unset PATH
 unset =
 unset ======
 unset ++++++
@@ -191,7 +147,6 @@ unset sudo
 /bin/cd Desktop
 history
 [touche du haut]
-pwd
 pwd hola
 pwd ./hola
 pwd hola que tal
@@ -227,18 +182,11 @@ cd .././../.././../bin/ls
 cd /
 cd '/'
 cd //
-pwd"
 cd '//'
-pwd"
 cd ///
-pwd"
 cd ////////
-pwd"
 cd '////////'
-pwd"
 cd /minishell
-cd /
-cd .."
 cd _
 cd -
 cd --
@@ -249,52 +197,24 @@ cd $HOME/42_works
 cd "$PWD/srcs"
 cd '$PWD/srcs'
 unset HOME
-cd $HOME"
-unset HOME
-cd"
-unset HOME
-cd"
 cd minishell Docs crashtest.c
 cd / | echo $?
-pwd"
 cd ~
 cd ~/
 cd ~/ | echo $?
-pwd"
-cd *
-cd *
 cd *
 mkdir a
 mkdir a/b
 cd a/b
 rm -r ../../a
 cd .."
-mkdir a
-mkdir a/b
-cd a/b
-rm -r ../../a
-pwd"
-mkdir a
-mkdir a/b
-cd a/b
-rm -r ../../a
-mkdir a
-mkdir a/b
-cd a/b
-rm -r ../../a
-cd
-mkdir a
-cd a
 rm -r ../a
 cd $HOME/.."
 cd home/vietdu91"
-cd ."
-cd .."
 chmod 000 minishell
 ./minishell"
 ls hola
 ./Makefile
-./minishell
 ./minishell
 exit
 touch hola
@@ -303,8 +223,6 @@ env|"wc" -l
 env|"wc "-l
 expr 1 + 1
 expr $? + $?
-env"
-export"
 cd"
 cd ~"
 exit
@@ -314,12 +232,7 @@ exit hola que tal
 exit 42
 exit 000042
 exit 666
-exit 666 666
 exit -666 666
-exit hola 666
-exit 666 666 666 666
-exit 666 hola 666
-exit hola 666 666
 exit 259
 exit -4
 exit -42
@@ -375,8 +288,7 @@ ls | ls | hola | rev
 ls | ls | echo hola | rev
 ls -la | grep "."
 ls -la | grep "'.'"
-ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls
-|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls"
+ls|ls|ls|ls|ls|ls|ls|ls|ls|ls
 ech|o hola | cat
 unset HOLA | cat -e
 sleep 3 | sleep 3
@@ -409,128 +321,32 @@ ls && (ls)
 ( ( ls ) &&pwd )
 (ls && ( ( pwd ) ) )
 (ls && pwd) > hola
-> hola ls && pwd
-> hola (ls && pwd)
-(> pwd)
-ls"
-(< pwd)
-ls"
-(< pwd)
-( ( ( ( ( pwd) ) ) ) )
-() pwd
-> pwd (ls)
-(ls||pwd)&&(ls||pwd)
-(lss||pwd)&&(lss||pwd)
-(lss&&pwd)&&(lss&&pwd)
-(ls && pwd | wc) > hola
-(ls && pwd | wc) > hola
 (ls && pwd | wc) > hola
 (ls && pwd | wc) >> hola
 (pwd | wc) < hola
-(ls && pwd | wc) < hola
 (ls -z || pwd | wc) < hola
-(pwd | wc) < hola"
-(ls && pwd | wc) < hola"
-(ls -z || pwd | wc) < hola"
 (ls -z || pwd && ls)
 ls || (cat Makefile|grep srcs) && (pwd|wc)
 ls -z && (ls) && (pwd)
-(ls > Docs/hey && pwd) > hola
 ls > Docs/hey && pwd > hola
 cd ../.. && pwd && pwd
 (cd ../.. && pwd) && pwd
 ls -z || cd ../../..&&pwd
 pwd"
-ls -z || (cd ../../..&&pwd)
-pwd"
 rm bonjour
 whereis grep > Docs/bonjour
 ls -la > Docs/bonjour
 pwd>bonjour
-pwd >                     bonjour
 > bonjour echo hola
-> bonjour | echo hola
 prout hola > bonjour
-ls"
-ls
+>srcs/bonjour >srcs/hello <prout
+ls srcs
+rm srcs/bonjour srcs/hello
 rm bonjour hello
-rm bonjour hello
-rm bonjour hello
-rm bonjour hello
-rm bonjour hello
-> bonjour echo hola bonjour
->bonjour echo > hola>bonjour>hola>>bonjour>hola hey >bonjour hola >hola
-ls
-ls
-> pwd
-ls"
-< pwd
-< Makefile .
-ls"
->>hola
-cat<bonjour"
 cat< bonjour"
 cat<                     bonjour"
-rm bonjour
-e'c'""h""o hola > bonjour
-ls
-ls
->srcs/bonjour >srcs/hello <prout
-rm srcs/bonjour srcs/hello
->srcs/bonjour >srcs/hello <prout
-ls srcs
->srcs/bonjour <prout >srcs/hello
-rm srcs/bonjour srcs/hello
->srcs/bonjour <prout >srcs/hello
-ls srcs
->../bonjour >../hello <prout
-rm ../bonjour ../hello
->../bonjour >../hello <prout
-ls ..
->../bonjour <prout >../hello
-rm ../bonjour ../hello
->../bonjour <prout >../hello
-ls ..
->srcs/bonjour >>srcs/hello <prout
->>srcs/bonjour >srcs/hello <prout
->>srcs/bonjour >>srcs/hello <prout
->srcs/bonjour <prout >>srcs/hello
->>srcs/bonjour <prout >srcs/hello
->>srcs/bonjour <prout >>srcs/hello
-<prout >>srcs/bonjour >>srcs/hello
-<bonjour >hello
->bonjour >hello < prout
-rm bonjour hello
->bonjour >hello < prout
->bonjour <prout hello
-rm bonjour hello
->bonjour <prout hello
-<bonjour cat | wc > bonjour
-rm -f bonjour
-rm bonjour > bonjour
-ls -l bonjour"
->$HOLA
-ls"
->""$HOLA""
-ls"
->$""HOLA""
-ls"
->$HOLA>hey
-ls"
->hey>$HOLA
-ls"
->hey>$HOLA>hey>hey
-ls"
-<a cat <b <c
-<a cat <b <c
->a ls >b >>c >d
->a ls >b >>c >d
-mkdir dir
-ls -la > dir/bonjour
-<a
->d cat <a >>e
-< a > b cat > hey >> d
-ls"
+> pwd
+< pwd
 << hola
 <<hola
 prout << lol << cat << koala

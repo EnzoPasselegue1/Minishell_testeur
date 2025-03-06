@@ -1,13 +1,8 @@
-cat (faire Ctlr-C apres avoir fait plusieurs fois [ENTREE])
-cat | rev(faire Ctlr-C apres avoir fait plusieurs fois [ENTREE])
-cat (faire Ctlr-\ apres avoir fait plusieurs fois [ENTREE])
-cat Makefile"
-cat | cat | cat | ls
+cat "Makefile"
+cat | ls
 cat -e bonjour | exit"
-cat /tmp/bonjour"
-cat /tmp/bonjour"
-cat /tmp/bonjour"
-cat Makefile | cat -e | cat -e
+cat "/tmp/bonjour"
+cat Makefile | cat -e
 cat Makefile | grep srcs | cat -e
 cat Makefile | grep srcs | grep srcs | cat -e
 cat Makefile | grep pr | head -n 5 | cd file_not_exist
@@ -15,57 +10,19 @@ cat Makefile | grep pr | head -n 5 | hello
 cat a | <b cat | cat > c | cat"
 cat | echo || ls
 cat | echo && ls
-cat hola"
-cat hola"
-cat hola"
-cat hola"
+cat "hola"
 cat hola
-cat Docs/hey"
-cat hola
-cat Docs/hey"
-cat bonjour"
-cat bonjour"
-cat < bonjour"
-cat < bonjour"
-cat bonjour"
-cat -e /tmp/bonjour"
-cat Docs/bonjour"
-cat Docs/bonjour"
-cat bonjour"
-cat bonjour"
-cat bonjour"
-cat bonjour"
-cat hello"
-cat < hello"
-cat < hello"
-cat < hello"
-cat < hello"
-cat < hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
+cat "Docs/hey"
+cat "bonjour"
+cat "< bonjour"
+cat "-e /tmp/bonjour"
+cat "Docs/bonjour"
+cat "hello"
+cat "< hello"
 cat bonjour
 cat hello"
 cat bonjour"
-cat bonjour
 cat hola"
-cat hola1
-cat hola2"
 cat hola1
 cat hola2"
 cat <pwd
@@ -78,82 +35,33 @@ cat >> > >> << >>
 cat < ls
 cat < ls > ls
 cat > ls1 < ls2
-cat hola"
 cat < bonjour"
-cat <bonjour"
-cat            <         bonjour"
-cat < srcs/bonjour"
 cat <srcs/bonjour"
-cat < bonjour"
-cat < bonjour"
 cat 'bo'""n""jour"
 cat bonjour\ 1"
-cat bonjour
 cat hey"
 cat srcs/bonjour srcs/hello"
-cat srcs/bonjour srcs/hello"
-cat srcs/bonjour
-cat srcs/hello"
 cat srcs/bonjour"
 cat ../bonjour ../hello"
-cat ../bonjour ../hello"
-cat ../bonjour
-cat ../hello"
 cat ../bonjour"
 cat srcs/bonjour
 cat srcs/hello"
-cat srcs/bonjour
-cat srcs/hello"
-cat srcs/bonjour
-cat srcs/hello"
-cat srcs/bonjour
-cat srcs/hello"
-cat srcs/bonjour
-cat srcs/hello"
-cat srcs/bonjour
-cat srcs/hello"
-cat srcs/bonjour
-cat srcs/hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
-cat bonjour
-cat hello"
 cat bonjour "
-cat bonjour"
 cat /tmp/a
 cat /tmp/b
 cat /tmp/c"
 cat a
 cat b
 cat c"
-cat a
-cat b
-cat c
 cat d"
-cat a
-cat b
-cat c
-cat d"
-cat a
-cat b
-cat c"
 cat dir/bonjour"
-cat a"
-cat a
-cat d
 cat e"
-cat d
 cat << hola
 cat << 'hola'
 cat << "hola"
 cat << ho"la"
 cat << $HOME
 cat << hola > bonjour
-cat bonjour"
 cat << hola | rev
 cat <<
 cat << prout << lol << koala

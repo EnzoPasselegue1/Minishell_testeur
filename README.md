@@ -22,6 +22,7 @@ git clone https://github.com/EnzoPasselegue1/Minishell_testeur.git
 cd Minishell_testeur
 gcc test_minishell.c -o test_minishell
 ```
+## 🆘🆘Il faut apsolument changer readline que cela : readline("minishell$>")🆘🆘  
 ## 🎯 Utilisation
 1️⃣ Lancer un test
 Utilise la commande suivante pour exécuter un test :

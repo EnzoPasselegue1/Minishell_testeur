@@ -1,1 +1,24 @@
 echo "⭐Noublie pas de mettre une Etoile au projet si il te plait ⭐"
+cat Makefile
+echo $
+echo $1234
+echo $_1234
+echo $_abc
+echo $%
+echo $U'SER'
+echo "$U"SER
+echo $USER
+echo $1
+cat
+echo $%%
+echo $^^^^^
+echo $abcdef
+echo "$USER"
+echo '$'USER''
+echo $'USER'
+echo $"USER"
+echo $""
+echo "$"
+echo ""$""
+echo ""$HOME
+echo ''$HOME

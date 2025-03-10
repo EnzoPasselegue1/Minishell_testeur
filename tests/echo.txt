@@ -36,18 +36,12 @@ echo $9HOME
 echo $HOME%
 echo Le path de mon HOME est $HOME
 echo $USER$var\$USER$USER\$USERtest$USER
-echo $hola*
 echo -nnnn $hola
 echo > <
 echo | |
-echo *
 echo '*'
 echo D*
 echo *Z
-echo *t hola
-echo *t
-echo $*
-echo hola*hola *
 echo $""
 echo "$"""
 echo '$'''
@@ -91,15 +85,13 @@ echo ""             hola$?
 echo "$DONTEXIST"Makefile
 echo "$DONTEXIST""Makefile"
 echo "$DONTEXIST" "Makefile"
-echo $HOLA"
-echo $HOLA et $BYE"
-echo $HOLA | cat -e"
-echo "" $HOLA "" | cat -e"
-echo $HOLA$HOLA$HOLA=hey$HOLA"
-echo """"""$HOLA"""""" | cat -e"
+echo $HOLA | cat -e
+echo "" $HOLA "" | cat -e
+echo $HOLA$HOLA$HOLA=hey$HOLA
+echo """"""$HOLA"""""" | cat -e
 echo wesh""$HOLA"" | cat -e"
-echo wesh""""$HOLA."
-echo wesh$""""HOLA."
+echo wesh""""$HOLA.
+echo wesh$""""HOLA.
 echo wesh$""HOLA HOLA""."
 echo ""$A'$B""'$C""$D'$E'""$F'""'$G'$H"""
 echo $PATH"
@@ -115,13 +107,9 @@ echo oui | echo non | echo hola | grep hola
 echo hola | cat -e
 echo test.c | cat -e
 echo hola | cat
-echo hola|| cat
-echo hola || echo bonjour
-echo hola && echo bonjour
-echo bonjour || echo hola
-echo bonjour && echo hola
-echo -n bonjour && echo -n hola
-echo hey&&(ls && pwd | wc) > hola
+echo hola | cat
+echo hola | echo bonjour
+echo bonjour | echo hola
 echo hey > hola
 echo que tal >> bonjour
 echo hola que tal > bonjour

@@ -55,12 +55,3 @@ cat c
 cat d
 cat dir/bonjour"
 cat e
-cat << hola
-cat << 'hola'
-cat << "hola"
-cat << ho"la"
-cat << $HOME
-cat << hola > bonjour
-cat << hola | rev
-cat <<
-cat << prout << lol << koala
